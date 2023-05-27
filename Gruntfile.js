@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       // configurable paths
       app: require('./bower.json').appPath || 'app',
       dist: 'dist',
-      target: 'community-app',
+      target: 'cbs',
       test: 'test',
       almond: 'app/bower_components/almond'
     },
@@ -406,7 +406,7 @@ module.exports = function(grunt) {
     }*/
       'gh-pages': {
           options: {
-              base: 'dist/community-app',
+              base: 'prod/cbs',
               branch: 'gh-pages',
               dotfiles: true
           },
