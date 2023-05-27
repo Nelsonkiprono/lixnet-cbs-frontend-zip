@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="./images/favicon.ico"/>
-    <title>{{ 'label.heading.mifosxclient' | translate }}</title>
+    <title>CBS</title>
     <style>[data-ng-cloak] {
         display: none !important;
     }</style>
     <link href="styles/styles.css" rel="stylesheet"/>
 </head>
-<body class="preview whitebg" id="top" data-spy="scroll" data-target=".subnav" data-offset="80"
+<body class="preview " style="background:#04085e" id="top" data-spy="scroll" data-target=".subnav" data-offset="80"
       data-ng-controller="MainController">
 
 <!--Loader -->
 <div id="loaderWrapper" data-ng-hide="domReady" style="position: absolute; height: 100%; width: 100%; top: 0;">
     <div id="loader" style="margin: 175px auto">
-        <div class="wrapper">
+        <!-- <div class="wrapper">
             <div class="bottom triangle"></div>
             <div class="top triangle"></div>
             <div class="left triangle"></div>
             <div class="right triangle"></div>
-          </div>          
+          </div> -->        
         <img src="images/loader.gif" style="margin: 10px auto" class="img-responsive">
     </div>
 </div>
@@ -196,7 +196,7 @@
                 <hr/>
                 
                 <div class="row" >
-                    <div class="col-xs-4 text-center">
+                    <!-- <div class="col-xs-4 text-center">
 
                         <ul class="list-unstyled">
                             <li><h5>{{'label.heading.resources' | translate | uppercase }}</h5></li>
@@ -243,28 +243,28 @@
                                 translate }}</a></li>
                         </ul>
 
-                    </div>
+                    </div> -->
                 </div>
 
                 <hr/>
             
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                     <div class="col-sm-6 col-sm-offset-3 text-center">
                         <br>
 
-                        <p class=" text-muted"><span ng-bind-html="text"></span>
+                        <!--<p class=" text-muted"><span ng-bind-html="text"></span>
                             <br>
                             <span style=" display: inline-block; margin:auto;min-width:40px; border-bottom:2px solid #e0e0e0;">&nbsp;</span>
-                        </p>
+                        </p> -->
 
                     </div>
                 </div>
             </div>
             <div class="row" ng-hide = "response.uiDisplayConfigurations.whiteLabel.loginPage.releaseDetails">
-                <p class="text-center text-muted small">
+                <!-- <p class="text-center text-muted small">
                     <span>{{ 'label.heading.version' | translate }} {{ version }}</span>
                     <br/> <span>{{response.uiDisplayConfigurations.whiteLabel.loginPage.companyName}}{{ 'label.heading.uptodate' | translate }}</span>
-                </p>
+                </p> -->
             </div>
             </div>
         </div>
@@ -284,7 +284,7 @@
         <div id="mifos-reskin-ui-container">
             <div id="mifos-reskin-header-nav" ng-include="'views/_topnavbar.html'"></div>
 
-            <div id="mifos-reskin-body-container" style="background-color: #ebeff1">
+            <div id="mifos-reskin-body-container" style="background-color: #04085e">
                 <nav id="mifos-reskin-side-nav"  ng-scrollbar>
                     <div class="left-nav">
                         <ul>
@@ -390,10 +390,10 @@
                 <!-- Footer -->
                 <br><br>
                 <footer>
-                    <p align="center"><a
+                    <!-- <p align="center"><a
                             href="https://mifosforge.jira.com/browse/MIFOSX/component/11710/?selectedTab=com.atlassian.jira.jira-projects-plugin:component-changelog-panel"
                             target="_blank"> {{'label.relVersion' | translate}} {{version}} | {{'label.relDate' |
-                        translate}} {{releasedate}} </a></p>
+                        translate}} {{releasedate}} </a></p> -->
                 </footer>
                 <hr>
             </div>
@@ -401,6 +401,6 @@
     </div>
 </div>
 <!-- Le javascript -->
-<script type='text/javascript' data-main="scripts/loader.js" src='bower_components/requirejs/require.js'></script>
+<script type='text/javascript' data-main="scripts/loader.da43206e.js" src='bower_components/requirejs/require.js'></script>
 </body>
 </html>
