@@ -43,6 +43,15 @@
             .when('/viewtemplate/:id', {
                 templateUrl: 'views/templates/viewtemplate.html'
             })
+            .when('/mpesa/', {
+                templateUrl: 'views/mpesa/transactionslist.html'
+            })
+              .when('/pay/:id', {
+                templateUrl: 'views/mpesa/pay.html'
+            })
+             .when('/viewmpesatransaction/:id', {
+                templateUrl: 'views/mpesa/viewmpesatransaction.html'
+            })
             .when('/edittemplate/:id', {
                 templateUrl: 'views/templates/edittemplate.html'
             })
